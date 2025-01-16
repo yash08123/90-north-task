@@ -1,6 +1,7 @@
 
 **Chat App Project**
 ======================
+![alt text](image.png)
 
 **Table of Contents**
 -----------------
