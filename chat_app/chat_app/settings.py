@@ -41,7 +41,8 @@ SECRET_KEY = 'django-insecure-zbv+1pod#o9r1*#@=gpin_9i*u#niq(oo*t)w4$iz5+bq=@*rk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+CSRF_TRUSTED_ORIGINS = ['https://*.render.com']
 
 
 
@@ -75,7 +76,7 @@ ROOT_URLCONF = 'chat_app.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': [ BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
