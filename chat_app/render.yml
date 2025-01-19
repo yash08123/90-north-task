@@ -1,13 +1,9 @@
 services:
   - type: web
-    name: django-chat-app
+    name: chat-app
     env: python
     buildCommand: "./build.sh"
-    startCommand: "daphne chat_app.asgi:application --port $PORT --bind 0.0.0.0"
+    startCommand: "daphne -b 0.0.0.0 -p 8000 chat_app.asgi:application"
     envVars:
-      - key: PYTHON_VERSION
-        value: 3.9.0
-      - key: DJANGO_SECRET_KEY
-        generateValue: true
-      - key: DJANGO_DEBUG
-        value: false
+      - key: PYTHONPATH
+        value: "/opt/render/project/src/chat_app"
