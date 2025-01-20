@@ -18,5 +18,7 @@ pwd
 
 cd ..
 
-ls pwd
+ls 
+
+pwd
 
