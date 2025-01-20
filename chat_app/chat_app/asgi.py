@@ -13,7 +13,7 @@ from channels.auth import AuthMiddlewareStack
 import chat.routing as routing
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat_app.chat_app.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'chat_app.settings')
 
 application = ProtocolTypeRouter({
     "http": get_asgi_application(),
