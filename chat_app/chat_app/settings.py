@@ -45,7 +45,6 @@ ALLOWED_HOSTS = ['*']
 CSRF_TRUSTED_ORIGINS = ['https://*.render.com']
 
 
-
 # Application definition
 
 INSTALLED_APPS = [
