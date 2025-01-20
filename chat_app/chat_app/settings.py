@@ -42,7 +42,10 @@ SECRET_KEY = 'django-insecure-zbv+1pod#o9r1*#@=gpin_9i*u#niq(oo*t)w4$iz5+bq=@*rk
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-CSRF_TRUSTED_ORIGINS = ['https://nine0-north-task-4geg.onrender.com/']
+CSRF_TRUSTED_ORIGINS = [
+    "https://nine0-north-task-4geg.onrender.com"
+]
+
 
 
 # Application definition
