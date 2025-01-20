@@ -16,7 +16,4 @@ ls
 
 pwd
 
-python manage.py runserver
-
-
 
