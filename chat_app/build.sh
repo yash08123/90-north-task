@@ -16,9 +16,5 @@ ls
 
 pwd
 
-cd ..
 
-ls 
-
-pwd
 
